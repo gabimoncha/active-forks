@@ -1,7 +1,8 @@
 # active-forks
 Might turn it into an app
 
-Query I use to get the last active fork of an unmaintained project
+Query I use to get the last active fork of an unmaintained project.
+Try it ouy in the [github graphql explorer](https://docs.github.com/en/graphql/overview/explorer)
 
 
 ```graphql
