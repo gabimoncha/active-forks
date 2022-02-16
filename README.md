@@ -9,17 +9,20 @@ Try it ouy in the [github graphql explorer](https://docs.github.com/en/graphql/o
 query { 
   repository(
     owner: "gabrielmoncea"
-    name: "react-native-temaplate"
+    name: "react-native-template"
   ) {
     name
     forkCount
     forks(
-      first: 25 # 100 limit
+      first: 25
       orderBy: { field: PUSHED_AT, direction: DESC }
     ) {
       totalCount
       nodes {
         url
+        licenseInfo{
+          name
+        }
       }
     }
   }
